@@ -1,0 +1,19 @@
+def calcular_promedio(edad1, edad2, edad3):
+    """
+    Calcula el promedio de tres edades.
+    :param edad1: Primera edad
+    :param edad2: Segunda edad
+    :param edad3: Tercera edad
+    :return: Promedio de las edades
+    """
+    return (edad1 + edad2 + edad3) / 3
+
+if __name__ == "__main__":
+    try:
+        edad1 = int(input("Ingresa la primera edad: "))
+        edad2 = int(input("Ingresa la segunda edad: "))
+        edad3 = int(input("Ingresa la tercera edad: "))
+        promedio = calcular_promedio(edad1, edad2, edad3)
+        print(f"El promedio de las edades es: {promedio:.2f}")
+    except ValueError:
+        print("Por favor, ingresa solo números enteros.")
